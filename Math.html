@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>generate random and set interval</title>
+  </head>
+  <body>
+    <p id="javascript"></p>
+    <script>
+      //   var x = 0;
+      //   var xy = setInterval(function () {
+      //     document.write(++x);
+      //     if (x == 5) {
+      //       clearInterval(xy);
+      //     }
+      //   }, 2000);
+
+      //   setInterval(function(){
+
+      //   })
+
+      //   var x = Math.floor(Math.random() * 10) + 10;
+      //   document.write(x);
+
+      var cars = [
+        "camry",
+        "tesla",
+        "bugatti",
+        "ford",
+        "ferrari",
+        "porsche",
+        "rolls royce",
+        "G wagon",
+        "toyota",
+        "benz",
+        "lexus",
+      ];
+
+      var xyz = setInterval(function () {
+        var xy = Math.floor(Math.random() * cars.length);
+        document.getElementById("javascript").innerHTML = cars[xy];
+      }, 2000);
+
+      //   var x = Math.floor(Math.random() * cars.length);
+
+      //   document.write(cars[x]);
+    </script>
+  </body>
+</html>

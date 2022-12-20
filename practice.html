@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <p onmouseover="myFunction(this)" id="ptag">this is a p tag</p>
+    <div onclick="xyz(this)" >
+      <span>this is a span</span>
+      <p>this is a p tag</p>
+      <h1>this is header tag</h1>
+    </div>
+  </body>
+  <script>
+    function myFunction(xy) {
+      xy.innerHTML = "THIS IS WORKING";
+    }
+
+    function xyz(id) {
+      var x = id.children;
+      x[1].innerHTML = "this is a parent test";
+       x[0].innerHTML = "this is a parent test";
+        x[2].innerHTML = "this is a parent test";
+    }
+   
+  </script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    </style>
+  </head>
+  <body>
+   
+<form>
+  <input type="text" id="sub"/>
+  <button onclick="myForm()">submit</button>
+
+</form><br>
+
+<select name="" id="testIt">
+  <option value="">html</option>
+  <option value="">css</option>
+  <option value="">javascript</option>
+  <option value="">bootstrap</option>
+
+</select>
+<button onclick="sel()">view</button>
+
+  <form onsubmit="myForm()">
+    <label>Name:</label><br>
+    <input type="text" id="xy"><br>
+   
+    <button >Submit</button>
+  </form>
+
+<input type="number"/>
+
+    <script>
+
+    //   function xyz(){
+    //       // e.preventDefault();
+    //    var ky = document.getElementById('xy').value;
+    //   alert("this is working fine" + ky);
+    //  }
+      function myForm(){
+        e.preventDefault();
+        var x= document.getElementById('xy').value;
+        alert("this is working fine" + x)
+
+      }
+
+      // function sel(){
+      //   var Courses = document.getElementById('testIt')
+      //   var display = Courses.options[Courses.selectedIndex].text;
+      //   alert("you selected: " + display)
+        
+      // }
+
+
+
+     
+    </script>
+  </body>
+</html>

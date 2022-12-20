@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    </style>
+  </head>
+  <body>
+   
+<form>
+  <input type="text" id="sub"/>
+  <button onclick="myForm()">submit</button>
+
+</form><br>
+
+<select name="" id="testIt">
+  <option value="">html</option>
+  <option value="">css</option>
+  <option value="">javascript</option>
+  <option value="">bootstrap</option>
+
+</select>
+<button onclick="sel()">view</button>
+
+  <form onsubmit="xyz()">
+    <label>Name:</label><br>
+    <input type="text" id="xy"><br>
+   
+    <button>Submit</button>
+  </form>
+<div><p id="num1"></p><span>X</span><p id="num2"></p></div>
+<p id="answer"></p>
+
+<input type="text" id="x"/>
+<input type="text" id="y"/>
+<button onclick="cal()">calculate</button>
+<p>Timer: <span id="timer">60</span>sec</p>
+    <script>
+   
+var x = 60
+
+ var y= setInterval(function(){
+   document.getElementById('timer').innerHTML=--x;
+   if(x==50){
+     clearInterval(y)
+
+   }
+}, 1000)
+
+      function xyz(){
+          e.preventDefault();
+       var ky = document.getElementById('xy').value;
+      alert("this is working fine" + ky);
+     }
+      // function myForm(){
+      //   var x= document.getElementById('sub').value;
+      //   alert(x)
+
+      // }
+
+      // function sel(){
+      //   var Courses = document.getElementById('testIt')
+      //   var display = Courses.options[Courses.selectedIndex].text;
+      //   alert("you selected: " + display)
+        
+      // }
+       Math.floor(Math.random()*20)+10
+
+    var courses = ['html', 'javascript', 'python', 'c#', 'c++', 'Ruby', 'golang']
+   
+    var randomNum = Math.floor(Math.random()*courses.length)
+    document.write(courses[randomNum])
+
+
+     
+    </script>
+  </body>
+</html>

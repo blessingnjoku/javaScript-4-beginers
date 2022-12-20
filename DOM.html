@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <!-- <p id="page">this is a p tag</p>
+    <h6 class="hell">hello world</h6>
+    <h6 class="hell">hello world</h6>
+    <div>
+      <span id="sp">this is a span tag</span>
+    </div>
+
+    <label id="lb">my name is Anthony</label>
+    <button
+      style="padding: 10px"
+      id="togo"
+      onclick="clickme()"
+      onmouseover="mm()"
+      onmouseout="md()"
+    >
+      to go
+    </button> -->
+
+    <textarea cols="50" rows="10" id="display"></textarea>
+    <input type="text" id="ty" onkeyup="typing()" />
+    <!-- <button>submit</button> -->
+    <p id="taggs">THIS IS A javascript class</p>
+    <h1 id="hh"></h1>
+    <button id="btn" onclick="runnow()">click</button>
+
+    <p id="returnText">this is the error and success message</p>
+    <input type="number" id="input_number" />
+    <button id="check" onclick="checkme()">Check</button>
+
+    <script>
+      function runnow() {
+        var x = document.getElementById("taggs").innerHTML;
+        document.getElementById("hh").innerHTML = x;
+      }
+
+      // var age = 18
+
+      function checkme() {
+        var age = document.getElementById("input_number").value;
+        if (age < 20) {
+          document.getElementById("returnText").innerHTML =
+            "<p style='color:red'>you are too young</p>";
+        } else if (age > 50) {
+          document.getElementById("returnText").innerHTML =
+            "<p style='color:green'>you are too old</p>";
+        } else {
+          document.getElementById("returnText").innerHTML =
+            "<p style='color:blue'>you are an adult</p>";
+        }
+      }
+
+      // document.getElementById("ty").addEventListener("input", runinput);
+
+      // function runinput() {
+      //   var xy = document.getElementById("ty").value;
+      //   document.getElementById("display").innerText = xy;
+      // }
+
+      // function typing() {
+      //   var xy = document.getElementById("ty").value;
+      //   document.getElementById("display").innerText = xy;
+      // }
+
+      // function xyz() {
+      //   var x = document.getElementById("taggs").innerHTML;
+      //   document.getElementById("hh").innerText = x;
+      // }
+
+      // USING EVEN LISTENER
+
+      // document.getElementById("btn").addEventListener("mouseover", function () {
+      //   alert("welcome to Nigeria");
+      // });
+      // document.getElementById("btn").addEventListener("mouseover", xyz);
+      // function xyz() {
+      //   alert("welcome to Nigeria");
+      // }
+
+      // function clicknow(id) {
+      //   var y = id.children;
+      //   y[0].innerHTML = "this is not working fine";
+      // }
+
+      // function clickme() {
+      //   document.getElementById("togo").innerHTML = "clicked";
+      // }
+      // function mm() {
+      //   document.getElementById("togo").style.color = "green";
+      // }
+      // function md() {
+      //   document.getElementById("togo").style.color = "black";
+      // }
+
+      //   document.getElementById("togo").style.color = "blue";
+      //   document.getElementById("page").innerHTML =
+      //     "<h1 style='color:red'>this is a javascript class</h1>";
+      //   document.getElementsByClassName("hell")[1].innerHTML = "this is good";
+      //   document.getElementsByTagName("p")[0].innerHTML =
+      //     "<h1 style='color:yellow'>my name is Samson</h1>";
+
+      //   document.querySelector(".hell").innerHTML =
+      //     "this is a parent and child test";
+
+      //   var nam = document.getElementById("lb").innerHTML;
+      //   alert(nam);
+    </script>
+  </body>
+</html>
